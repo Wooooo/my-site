@@ -1,0 +1,20 @@
+.home-component {
+}
+
+.subtitle-enter {
+  transform: translate(-100%);
+}
+
+.subtitle-enter.subtitle-enter-active {
+  transform: translate(0%);
+  transition: transform 300ms ease-out;
+}
+
+.subtitle-leave {
+  opacity: 1;
+}
+
+.subtitle-leave.subtitle-leave-active {
+  opacity: .1;
+  transition: opacity 50ms ease-in;
+}
