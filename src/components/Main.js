@@ -9,7 +9,7 @@ import Footer from './FooterComponent';
 class AppComponent extends React.Component {
     render() {
         return (
-            <div style={styles.wrapper} className="row">
+            <div style={styles.wrapper}>
                 <div style={styles.container} className="container">
                     {this.props.children}
 
@@ -27,9 +27,10 @@ const styles = {
         display: 'flex'
     },
     wrapper: {
-        backgroundColor: colors.grey[800],
+        backgroundColor: colors.grey[700],
         flex: 1,
-        flexDirection: 'column'
+        flexDirection: 'column',
+        display: 'flex'
     }
 };
 
